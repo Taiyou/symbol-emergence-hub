@@ -1,7 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
 import Layout from '../Layout.astro';
-import EventCard from '../EventCard.astro';
 import { t, type Locale } from '../../i18n';
 
 interface Props {
@@ -9,40 +7,13 @@ interface Props {
 }
 
 const { locale } = Astro.props;
-const today = new Date();
-const all = await getCollection('events');
-const upcoming = all
-  .filter((e) => +e.data.date_end >= +today)
-  .sort((a, b) => +a.data.date_start - +b.data.date_start);
-const past = all
-  .filter((e) => +e.data.date_end < +today)
-  .sort((a, b) => +b.data.date_start - +a.data.date_start);
 ---
 <Layout locale={locale} pathWithoutLocale="/events/" title={t(locale, 'events.heading')}>
   <header class="py-8 border-b border-neutral-200 mb-8">
     <h1 class="text-3xl font-semibold mb-2">{t(locale, 'events.heading')}</h1>
-    <p class="text-ink-muted">{t(locale, 'events.intro')}</p>
   </header>
-
-  {upcoming.length > 0 && (
-    <section class="mb-10">
-      <h2 class="text-sm uppercase tracking-wider text-ink-muted mb-4">
-        {locale === 'ja' ? '今後' : 'Upcoming'}
-      </h2>
-      <div class="grid gap-4 sm:grid-cols-2">
-        {upcoming.map((e) => <EventCard event={e} locale={locale} />)}
-      </div>
-    </section>
-  )}
-
-  {past.length > 0 && (
-    <section>
-      <h2 class="text-sm uppercase tracking-wider text-ink-muted mb-4">
-        {locale === 'ja' ? '過去のイベント' : 'Past'}
-      </h2>
-      <div class="grid gap-4 sm:grid-cols-2 opacity-70">
-        {past.map((e) => <EventCard event={e} locale={locale} />)}
-      </div>
-    </section>
-  )}
+  <div class="py-20 text-center">
+    <p class="text-2xl font-semibold text-ink-muted mb-3">{t(locale, 'common.under_construction')}</p>
+    <p class="text-ink-muted">{t(locale, 'common.under_construction.note')}</p>
+  </div>
 </Layout>

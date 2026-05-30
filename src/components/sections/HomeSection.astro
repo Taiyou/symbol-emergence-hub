@@ -22,13 +22,15 @@ const papers = (await getCollection('papers'))
   .sort((a, b) => +b.data.date_added - +a.data.date_added)
   .slice(0, 3);
 
-const labs = (await getCollection('labs')).slice(0, 3);
+// Labs & Events pages are under construction — keep their home sections empty
+// (slice(0, 0)) so nothing renders until they go live.
+const labs = (await getCollection('labs')).slice(0, 0);
 
 const today = new Date();
 const events = (await getCollection('events'))
   .filter((e) => +e.data.date_end >= +today)
   .sort((a, b) => +a.data.date_start - +b.data.date_start)
-  .slice(0, 3);
+  .slice(0, 0);
 
 const videos = ((videosData.items ?? []) as VideoItem[]).slice(0, 3);
 const articles = ((notesData.items ?? []) as ArticleItem[]).slice(0, 3);
@@ -66,17 +68,19 @@ const articles = ((notesData.items ?? []) as ArticleItem[]).slice(0, 3);
         </section>
       )}
 
-      <section class="py-10 border-t border-neutral-200">
-        <div class="flex items-baseline justify-between mb-5">
-          <h2 class="text-xl font-semibold">{t(locale, 'home.section.labs')}</h2>
-          <a href={localizedPath(locale, '/labs/')} class="text-sm text-ink-muted hover:text-ink no-underline">
-            {t(locale, 'common.view_all')} →
-          </a>
-        </div>
-        <div class="grid gap-4 sm:grid-cols-2">
-          {labs.map((l) => <LabCard lab={l} locale={locale} />)}
-        </div>
-      </section>
+      {labs.length > 0 && (
+        <section class="py-10 border-t border-neutral-200">
+          <div class="flex items-baseline justify-between mb-5">
+            <h2 class="text-xl font-semibold">{t(locale, 'home.section.labs')}</h2>
+            <a href={localizedPath(locale, '/labs/')} class="text-sm text-ink-muted hover:text-ink no-underline">
+              {t(locale, 'common.view_all')} →
+            </a>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            {labs.map((l) => <LabCard lab={l} locale={locale} />)}
+          </div>
+        </section>
+      )}
 
       {events.length > 0 && (
         <section class="py-10 border-t border-neutral-200">

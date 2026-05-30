@@ -16,7 +16,7 @@
     "papers:pipeline": "node scripts/fetch-arxiv.mjs && node scripts/sync-papers-from-notion.mjs",
     "fetch:all": "node scripts/fetch-youtube.mjs && node scripts/fetch-note.mjs",
     "update:videos": "node scripts/fetch-youtube.mjs && astro build",
-    "update:content": "pnpm fetch:all && pnpm papers:pipeline && astro build"
+    "update:content": "npm run fetch:all && npm run papers:pipeline && astro build"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",
