@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-02T06:51:30.408Z",
+  "fetchedAt": "2026-07-03T06:43:17.867Z",
   "queries": [
     "Collective Predictive Coding",
     "集合的予測符号化",
@@ -7,6 +7,18 @@
     "CPC仮説"
   ],
   "items": [
+    {
+      "videoId": "WBYbkx2Ifxs",
+      "title": "System Achitecture of Collective Visual Hallucination #tembodocs #philosophyandbigideas",
+      "description": "What if collective hallucinations are not paranormal events, but predictable failures in the brain's reality-rendering system?",
+      "channelTitle": "TEMBODocs",
+      "channelId": "UC5lQtJeLs7W-zCvpmsqk_Ag",
+      "publishedAt": "2026-07-02T02:00:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/WBYbkx2Ifxs/mqdefault.jpg",
+      "matchedQueries": [
+        "Collective Predictive Coding"
+      ]
+    },
     {
       "videoId": "ypBD3nc2j78",
       "title": "対談バトル！ アテンション・エコノミー時代の科学コミュニケーションとは？【丸山隆一 vs スズキ】",
@@ -122,21 +134,6 @@
       "matchedQueries": [
         "Collective Predictive Coding",
         "集合的予測符号化"
-      ]
-    },
-    {
-      "videoId": "uOXNy6S2JKE",
-      "title": "集合的予測符号化（CPC）とは何か？ — 記号が社会から生まれる仕組み #Shorts",
-      "description": "集合的予測符号化（Collective Predictive Coding, CPC）は、脳の予測符号化の原理を社会全体に拡張した理論です。複数の ...",
-      "channelTitle": "Tadahiro Taniguchi",
-      "channelId": "UCZoOLdKmQ5V_fcCd36_YYWA",
-      "publishedAt": "2026-03-07T13:55:03Z",
-      "thumbnail": "https://i.ytimg.com/vi/uOXNy6S2JKE/mqdefault.jpg",
-      "matchedQueries": [
-        "Collective Predictive Coding",
-        "集合的予測符号化",
-        "記号創発",
-        "CPC仮説"
       ]
     }
   ]
