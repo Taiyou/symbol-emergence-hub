@@ -4,7 +4,7 @@ import Layout from '../Layout.astro';
 import PaperCard from '../PaperCard.astro';
 import { t, type Locale } from '../../i18n';
 import {
-  ARXIV_QUERIES,
+  ARXIV_QUERY_DEFS,
   ARXIV_CATEGORIES,
 } from '../../../scripts/arxiv-queries.mjs';
 
@@ -17,6 +17,8 @@ const { locale } = Astro.props;
 const papers = (await getCollection('papers')).sort(
   (a, b) => +b.data.date_added - +a.data.date_added
 );
+
+const topics = [...new Set(ARXIV_QUERY_DEFS.map((d) => d.label[locale]))];
 ---
 <Layout locale={locale} pathWithoutLocale="/papers/" title={t(locale, 'papers.heading')}>
   <header class="py-8 border-b border-neutral-200 mb-8">
@@ -27,9 +29,9 @@ const papers = (await getCollection('papers')).sort(
         {t(locale, 'papers.queries_label')}
       </p>
       <div class="flex flex-wrap gap-1">
-        {ARXIV_QUERIES.map((q) => (
-          <span class="text-[11px] px-2 py-0.5 rounded bg-neutral-100 text-ink-muted font-mono break-all">
-            {q}
+        {topics.map((topic) => (
+          <span class="text-[11px] px-2 py-0.5 rounded bg-neutral-100 text-ink-muted">
+            {topic}
           </span>
         ))}
       </div>
