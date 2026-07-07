@@ -9,6 +9,7 @@ const OUTPUT = resolve(ROOT, 'src/data/videos.json');
 const ENV_FILE = resolve(ROOT, '.env');
 
 const QUERIES = [
+  '記号創発システム論',
   'Collective Predictive Coding',
   '集合的予測符号化',
   '記号創発',

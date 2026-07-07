@@ -42,7 +42,7 @@
   "common.under_construction": "Under construction",
   "common.under_construction.note": "This page is currently under construction. Check back soon.",
   "videos.heading": "YouTube videos",
-  "videos.intro": "The 10 most recent YouTube videos matching \"Collective Predictive Coding\", \"集合的予測符号化\", \"記号創発\", or \"CPC仮説\".",
+  "videos.intro": "The 10 most recent YouTube videos matching \"記号創発システム論\", \"Collective Predictive Coding\", \"集合的予測符号化\", \"記号創発\", or \"CPC仮説\".",
   "videos.last_updated": "Last updated",
   "videos.empty": "No videos fetched yet. Run `npm run fetch:youtube`.",
   "videos.watch": "Watch on YouTube",

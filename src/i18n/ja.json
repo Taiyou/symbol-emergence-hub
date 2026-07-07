@@ -42,7 +42,7 @@
   "common.under_construction": "準備中",
   "common.under_construction.note": "このページは現在準備中です。近日公開予定です。",
   "videos.heading": "YouTube 動画",
-  "videos.intro": "「Collective Predictive Coding」「集合的予測符号化」「記号創発」「CPC仮説」を含む直近 10 件の YouTube 動画。",
+  "videos.intro": "「記号創発システム論」「Collective Predictive Coding」「集合的予測符号化」「記号創発」「CPC仮説」を含む直近 10 件の YouTube 動画。",
   "videos.last_updated": "最終更新",
   "videos.empty": "まだ動画が取得されていません。`npm run fetch:youtube` を実行してください。",
   "videos.watch": "YouTube で見る",

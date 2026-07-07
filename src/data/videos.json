@@ -1,12 +1,25 @@
 {
-  "fetchedAt": "2026-07-07T06:56:32.910Z",
+  "fetchedAt": "2026-07-07T12:27:40.008Z",
   "queries": [
+    "記号創発システム論",
     "Collective Predictive Coding",
     "集合的予測符号化",
     "記号創発",
     "CPC仮説"
   ],
   "items": [
+    {
+      "videoId": "r-gmluv02hM",
+      "title": "#14 「計算」とは何だったのか、どうなるのか（ゲスト：前山和喜さん）｜記号創発クロストーク",
+      "description": "知能や「意味」を巡る新たな学問として「記号創発システム論」を提唱する谷口忠大が、各分野の第一人者と語り合う連続対談 ...",
+      "channelTitle": "TANICHU NEVER KNOWS (Tadahiro Taniguchi)",
+      "channelId": "UCqDrijAYiRnC_RwbanZk6Jg",
+      "publishedAt": "2026-07-05T11:24:07Z",
+      "thumbnail": "https://i.ytimg.com/vi/r-gmluv02hM/mqdefault.jpg",
+      "matchedQueries": [
+        "記号創発システム論"
+      ]
+    },
     {
       "videoId": "WBYbkx2Ifxs",
       "title": "System Achitecture of Collective Visual Hallucination #tembodocs #philosophyandbigideas",
@@ -92,6 +105,7 @@
       "publishedAt": "2026-04-03T09:00:00Z",
       "thumbnail": "https://i.ytimg.com/vi/7VkgGcQwjwI/mqdefault.jpg",
       "matchedQueries": [
+        "記号創発システム論",
         "集合的予測符号化",
         "記号創発",
         "CPC仮説"
@@ -118,19 +132,6 @@
       "channelId": "UCq3Ox6HtzdCsKPCtd8VZbQA",
       "publishedAt": "2026-03-09T14:48:10Z",
       "thumbnail": "https://i.ytimg.com/vi/FDciW1rTX_k/mqdefault.jpg",
-      "matchedQueries": [
-        "Collective Predictive Coding",
-        "集合的予測符号化"
-      ]
-    },
-    {
-      "videoId": "m6hAhSRxCzI",
-      "title": "The Collective World Model",
-      "description": "https://arxiv.org/pdf/2501.00226 LLMs as Decentralized Bayesian Inference of Collective World Models This paper introduces the ...",
-      "channelTitle": "Vinh Nguyen",
-      "channelId": "UCq3Ox6HtzdCsKPCtd8VZbQA",
-      "publishedAt": "2026-03-09T14:42:07Z",
-      "thumbnail": "https://i.ytimg.com/vi/m6hAhSRxCzI/mqdefault.jpg",
       "matchedQueries": [
         "Collective Predictive Coding",
         "集合的予測符号化"
