@@ -92,5 +92,6 @@
   "share.copied": "Copied",
   "labs.submit": "Submit your lab",
   "events.submit": "Submit an event",
-  "directory.submit_note": "Submissions are checked automatically (required fields, link validity, and AI relevance review) and published once they pass."
+  "directory.submit_note": "Submissions are checked automatically (required fields, link validity, and AI relevance review) and published once they pass.",
+  "footer.submit_lead": "We welcome submissions of labs and events to list on this site."
 }

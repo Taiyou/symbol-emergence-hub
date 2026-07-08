@@ -92,5 +92,6 @@
   "share.copied": "コピーしました",
   "labs.submit": "研究室を掲載申請",
   "events.submit": "イベントを掲載申請",
-  "directory.submit_note": "フォームからの投稿は自動チェック(必須項目・リンク・AIによる関連性審査)を通過すると掲載されます。"
+  "directory.submit_note": "フォームからの投稿は自動チェック(必須項目・リンク・AIによる関連性審査)を通過すると掲載されます。",
+  "footer.submit_lead": "研究室・イベントの掲載申請を受け付けています。"
 }

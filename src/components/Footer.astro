@@ -1,5 +1,6 @@
 ---
 import { t, type Locale } from '../i18n';
+import forms from '../data/forms.json';
 
 interface Props {
   locale: Locale;
@@ -7,8 +8,36 @@ interface Props {
 
 const { locale } = Astro.props;
 const year = new Date().getFullYear();
+const hasForms = Boolean(forms.labs || forms.events);
 ---
 <footer class="border-t border-neutral-200 mt-auto">
+  {hasForms && (
+    <div class="max-w-5xl mx-auto px-6 py-6 border-b border-neutral-100 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <p class="text-sm text-ink-muted">{t(locale, 'footer.submit_lead')}</p>
+      <div class="flex flex-wrap gap-2">
+        {forms.labs && (
+          <a
+            href={forms.labs}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-3 py-1.5 border border-ink rounded text-sm font-medium no-underline hover:bg-ink hover:text-white transition-colors"
+          >
+            {t(locale, 'labs.submit')} →
+          </a>
+        )}
+        {forms.events && (
+          <a
+            href={forms.events}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-3 py-1.5 border border-ink rounded text-sm font-medium no-underline hover:bg-ink hover:text-white transition-colors"
+          >
+            {t(locale, 'events.submit')} →
+          </a>
+        )}
+      </div>
+    </div>
+  )}
   <div class="max-w-5xl mx-auto px-6 py-8 text-sm text-ink-muted flex flex-col gap-2 sm:flex-row sm:justify-between">
     <p>{t(locale, 'footer.note')}</p>
     <p>© {year} symbol-emergence hub</p>
