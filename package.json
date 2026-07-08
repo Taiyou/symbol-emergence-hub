@@ -13,12 +13,15 @@
     "fetch:note": "node scripts/fetch-note.mjs",
     "fetch:arxiv": "node scripts/fetch-arxiv.mjs",
     "sync:papers": "node scripts/sync-papers-from-notion.mjs",
+    "check:submissions": "node scripts/check-submissions.mjs",
+    "sync:directory": "node scripts/sync-directory-from-notion.mjs",
     "papers:pipeline": "node scripts/fetch-arxiv.mjs && node scripts/sync-papers-from-notion.mjs",
     "fetch:all": "node scripts/fetch-youtube.mjs && node scripts/fetch-note.mjs",
     "update:videos": "node scripts/fetch-youtube.mjs && astro build",
     "update:content": "npm run fetch:all && npm run papers:pipeline && astro build"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.4",
     "@notionhq/client": "^2.3.0",

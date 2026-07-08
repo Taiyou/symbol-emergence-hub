@@ -89,5 +89,8 @@
   "share.x": "X で共有",
   "share.bluesky": "Bluesky で共有",
   "share.copy": "リンクをコピー",
-  "share.copied": "コピーしました"
+  "share.copied": "コピーしました",
+  "labs.submit": "研究室を掲載申請",
+  "events.submit": "イベントを掲載申請",
+  "directory.submit_note": "フォームからの投稿は自動チェック(必須項目・リンク・AIによる関連性審査)を通過すると掲載されます。"
 }

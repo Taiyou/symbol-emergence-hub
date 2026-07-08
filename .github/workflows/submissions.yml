@@ -1,0 +1,72 @@
+name: Submissions pipeline
+
+# Every 6 hours: moderate pending Lab/Event submissions in Notion
+# (rule checks + Claude AI review), sync approved rows into
+# content/labs & content/events, and commit any diff.
+# deploy.yml redeploys the site after this workflow succeeds.
+#
+# Manual trigger: workflow_dispatch (run on demand from the Actions tab).
+#
+# Required repository secrets:
+#   NOTION_TOKEN         — Internal Integration token (starts with ntn_)
+#   NOTION_LABS_DB_ID    — Database ID for "CPC Lab Submissions"
+#   NOTION_EVENTS_DB_ID  — Database ID for "CPC Event Submissions"
+#   ANTHROPIC_API_KEY    — Claude API key for the AI moderation step
+#                          (if unset, rule-passing rows stay pending)
+
+on:
+  schedule:
+    # Every 6 hours, off the round hour to dodge GitHub cron congestion.
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: submissions-pipeline
+  cancel-in-progress: false
+
+jobs:
+  submissions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Moderate pending submissions
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_LABS_DB_ID: ${{ secrets.NOTION_LABS_DB_ID }}
+          NOTION_EVENTS_DB_ID: ${{ secrets.NOTION_EVENTS_DB_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run check:submissions
+
+      - name: Sync approved → content/labs & content/events
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_LABS_DB_ID: ${{ secrets.NOTION_LABS_DB_ID }}
+          NOTION_EVENTS_DB_ID: ${{ secrets.NOTION_EVENTS_DB_ID }}
+        run: npm run sync:directory
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "cpc-hub-bot"
+          git config user.email "cpc-hub-bot@users.noreply.github.com"
+          if [[ -z "$(git status --porcelain content/labs content/events)" ]]; then
+            echo "No submission changes."; exit 0
+          fi
+          git add content/labs content/events
+          git commit -m "chore(directory): sync labs/events from Notion [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "push retry $i…"; sleep 3
+          done
+          exit 1

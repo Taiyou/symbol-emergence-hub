@@ -1,19 +1,67 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../Layout.astro';
+import EventCard from '../EventCard.astro';
 import { t, type Locale } from '../../i18n';
+import forms from '../../data/forms.json';
 
 interface Props {
   locale: Locale;
 }
 
 const { locale } = Astro.props;
+const today = new Date();
+const all = await getCollection('events');
+const upcoming = all
+  .filter((e) => +e.data.date_end >= +today)
+  .sort((a, b) => +a.data.date_start - +b.data.date_start);
+const past = all
+  .filter((e) => +e.data.date_end < +today)
+  .sort((a, b) => +b.data.date_start - +a.data.date_start);
+const formUrl = forms.events;
 ---
 <Layout locale={locale} pathWithoutLocale="/events/" title={t(locale, 'events.heading')}>
   <header class="py-8 border-b border-neutral-200 mb-8">
-    <h1 class="text-3xl font-semibold mb-2">{t(locale, 'events.heading')}</h1>
+    <div class="flex flex-wrap items-start justify-between gap-4">
+      <div>
+        <h1 class="text-3xl font-semibold mb-2">{t(locale, 'events.heading')}</h1>
+        <p class="text-ink-muted">{t(locale, 'events.intro')}</p>
+      </div>
+      {formUrl && (
+        <a
+          href={formUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="shrink-0 inline-block px-4 py-2 border border-ink rounded text-sm font-medium no-underline hover:bg-ink hover:text-white transition-colors"
+        >
+          {t(locale, 'events.submit')} →
+        </a>
+      )}
+    </div>
+    {formUrl && (
+      <p class="text-xs text-ink-muted mt-3">{t(locale, 'directory.submit_note')}</p>
+    )}
   </header>
-  <div class="py-20 text-center">
-    <p class="text-2xl font-semibold text-ink-muted mb-3">{t(locale, 'common.under_construction')}</p>
-    <p class="text-ink-muted">{t(locale, 'common.under_construction.note')}</p>
-  </div>
+
+  {upcoming.length > 0 && (
+    <section class="mb-10">
+      <h2 class="text-sm uppercase tracking-wider text-ink-muted mb-4">
+        {locale === 'ja' ? '今後' : 'Upcoming'}
+      </h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        {upcoming.map((e) => <EventCard event={e} locale={locale} />)}
+      </div>
+    </section>
+  )}
+
+  {past.length > 0 && (
+    <section>
+      <h2 class="text-sm uppercase tracking-wider text-ink-muted mb-4">
+        {locale === 'ja' ? '過去のイベント' : 'Past'}
+      </h2>
+      <div class="grid gap-4 sm:grid-cols-2 opacity-70">
+        {past.map((e) => <EventCard event={e} locale={locale} />)}
+      </div>
+    </section>
+  )}
 </Layout>

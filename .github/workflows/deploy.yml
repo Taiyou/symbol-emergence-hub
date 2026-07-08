@@ -4,10 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  # Redeploy after the Papers pipeline commits new content. Its sync commits
-  # carry [skip ci], so a push trigger alone never rebuilds the site.
+  # Redeploy after the Papers/Submissions pipelines commit new content.
+  # Their sync commits carry [skip ci], so a push trigger alone never
+  # rebuilds the site.
   workflow_run:
-    workflows: ["Papers pipeline"]
+    workflows: ["Papers pipeline", "Submissions pipeline"]
     types: [completed]
 
 permissions:

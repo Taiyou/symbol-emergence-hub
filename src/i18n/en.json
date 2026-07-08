@@ -89,5 +89,8 @@
   "share.x": "Share on X",
   "share.bluesky": "Share on Bluesky",
   "share.copy": "Copy link",
-  "share.copied": "Copied"
+  "share.copied": "Copied",
+  "labs.submit": "Submit your lab",
+  "events.submit": "Submit an event",
+  "directory.submit_note": "Submissions are checked automatically (required fields, link validity, and AI relevance review) and published once they pass."
 }
