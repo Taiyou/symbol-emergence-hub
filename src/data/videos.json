@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-21T04:02:34.551Z",
+  "fetchedAt": "2026-08-22T03:57:08.143Z",
   "queries": [
     "記号創発システム論",
     "Collective Predictive Coding",
@@ -8,6 +8,18 @@
     "CPC仮説"
   ],
   "items": [
+    {
+      "videoId": "z2y7v4z684g",
+      "title": "神経ネットワークの安定状態と意味創発の関係｜吸引子・メタ安定・記号創発から読み解く",
+      "description": "https://research.smeai.org/neural-network-stability-meaning-emergence/ 「ニューラルネットワークが安定した状態に落ち着いた ...",
+      "channelTitle": "シュレーディンガーのねこ",
+      "channelId": "UCXxiMAo-ZlXkGVKj5vojHWA",
+      "publishedAt": "2026-08-21T21:52:57Z",
+      "thumbnail": "https://i.ytimg.com/vi/z2y7v4z684g/mqdefault.jpg",
+      "matchedQueries": [
+        "記号創発"
+      ]
+    },
     {
       "videoId": "r-gmluv02hM",
       "title": "#14 「計算」とは何だったのか、どうなるのか（ゲスト：前山和喜さん）｜記号創発クロストーク",
@@ -123,19 +135,6 @@
       "matchedQueries": [
         "集合的予測符号化",
         "記号創発"
-      ]
-    },
-    {
-      "videoId": "FDciW1rTX_k",
-      "title": "[Podcast] The Collective World Model",
-      "description": "https://arxiv.org/pdf/2501.00226 LLMs as Decentralized Bayesian Inference of Collective World Models This paper introduces the ...",
-      "channelTitle": "Vinh Nguyen",
-      "channelId": "UCq3Ox6HtzdCsKPCtd8VZbQA",
-      "publishedAt": "2026-03-09T14:48:10Z",
-      "thumbnail": "https://i.ytimg.com/vi/FDciW1rTX_k/mqdefault.jpg",
-      "matchedQueries": [
-        "Collective Predictive Coding",
-        "集合的予測符号化"
       ]
     }
   ]
