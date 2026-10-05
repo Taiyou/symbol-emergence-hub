@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-04T09:51:04.418Z",
+  "fetchedAt": "2026-10-05T10:30:13.832Z",
   "queries": [
     "記号創発システム論",
     "Collective Predictive Coding",
@@ -8,6 +8,18 @@
     "CPC仮説"
   ],
   "items": [
+    {
+      "videoId": "__Zfj3aKpik",
+      "title": "Your Brain Invented AI 3 Million Years Ago",
+      "description": "Right now (2026), you can type a question and something answers before you even finish typing. It feels brand new. It isn't.",
+      "channelTitle": "Sticky Explains",
+      "channelId": "UCNcQj_v1NdoT4hm-3fQx-Xw",
+      "publishedAt": "2026-09-28T09:46:40Z",
+      "thumbnail": "https://i.ytimg.com/vi/__Zfj3aKpik/mqdefault.jpg",
+      "matchedQueries": [
+        "Collective Predictive Coding"
+      ]
+    },
     {
       "videoId": "71DGHLxEbI0",
       "title": "創発的記号構造",
@@ -118,21 +130,6 @@
       "matchedQueries": [
         "集合的予測符号化",
         "記号創発"
-      ]
-    },
-    {
-      "videoId": "7VkgGcQwjwI",
-      "title": "ChatGPTは “意味” を理解しているか？【集合的予測符号化③】",
-      "description": "意味を理解しているとはどのようなことなのか、藤井さんと語りました！ 【「集合的予測符号化」シリーズ】 第1回 ...",
-      "channelTitle": "ゆる学徒カフェ・オープンマイク",
-      "channelId": "UCQdLfGZnFG-YpcWby-FIcFA",
-      "publishedAt": "2026-04-03T09:00:00Z",
-      "thumbnail": "https://i.ytimg.com/vi/7VkgGcQwjwI/mqdefault.jpg",
-      "matchedQueries": [
-        "記号創発システム論",
-        "集合的予測符号化",
-        "記号創発",
-        "CPC仮説"
       ]
     }
   ]
