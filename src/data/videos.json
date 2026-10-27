@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-26T08:59:01.973Z",
+  "fetchedAt": "2026-10-27T09:02:33.873Z",
   "queries": [
     "記号創発システム論",
     "Collective Predictive Coding",
@@ -8,6 +8,18 @@
     "CPC仮説"
   ],
   "items": [
+    {
+      "videoId": "5PPy2fd-LmU",
+      "title": "記号を捨てよ：数学的真実を「創発」する力　#吉見真一 #シンイチ数学 #定義存在学 #NotebookLM #数学 #数学哲学 #創発 #リーマン予想 #思考実験 #Shorts",
+      "description": "GoogleのAI「NotebookLM」が、定義存在学者・吉見真一氏が提唱する「シンイチ数学」およびその思想を解説！ 従来の数学の ...",
+      "channelTitle": "Shinichi Mathematics /シンイチ数学",
+      "channelId": "UCyLioDr8ma3-8pABdwHP41w",
+      "publishedAt": "2026-10-27T07:00:08Z",
+      "thumbnail": "https://i.ytimg.com/vi/5PPy2fd-LmU/mqdefault.jpg",
+      "matchedQueries": [
+        "記号創発"
+      ]
+    },
     {
       "videoId": "71DGHLxEbI0",
       "title": "創発的記号構造",
@@ -118,21 +130,6 @@
       "matchedQueries": [
         "集合的予測符号化",
         "記号創発"
-      ]
-    },
-    {
-      "videoId": "7VkgGcQwjwI",
-      "title": "ChatGPTは “意味” を理解しているか？【集合的予測符号化③】",
-      "description": "意味を理解しているとはどのようなことなのか、藤井さんと語りました！ 【「集合的予測符号化」シリーズ】 第1回 ...",
-      "channelTitle": "ゆる学徒カフェ・オープンマイク",
-      "channelId": "UCQdLfGZnFG-YpcWby-FIcFA",
-      "publishedAt": "2026-04-03T09:00:00Z",
-      "thumbnail": "https://i.ytimg.com/vi/7VkgGcQwjwI/mqdefault.jpg",
-      "matchedQueries": [
-        "記号創発システム論",
-        "集合的予測符号化",
-        "記号創発",
-        "CPC仮説"
       ]
     }
   ]
