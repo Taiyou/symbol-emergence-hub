@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-02T11:12:37.231Z",
+  "fetchedAt": "2026-11-03T10:55:28.094Z",
   "queries": [
     "記号創発システム論",
     "Collective Predictive Coding",
@@ -8,6 +8,21 @@
     "CPC仮説"
   ],
   "items": [
+    {
+      "videoId": "Iqsd0XWGCwo",
+      "title": "#15 原子たちの会話から秩序が創発する ～物理学 meets CPC～（ゲスト：橋本幸士さん）｜記号創発クロストーク",
+      "description": "知能や「意味」を巡る新たな学問として「記号創発システム論」を提唱する谷口忠大が、各分野の第一人者と語り合う連続対談 ...",
+      "channelTitle": "TANICHU NEVER KNOWS (Tadahiro Taniguchi)",
+      "channelId": "UCqDrijAYiRnC_RwbanZk6Jg",
+      "publishedAt": "2026-11-03T05:14:52Z",
+      "thumbnail": "https://i.ytimg.com/vi/Iqsd0XWGCwo/mqdefault.jpg",
+      "matchedQueries": [
+        "記号創発システム論",
+        "Collective Predictive Coding",
+        "集合的予測符号化",
+        "記号創発"
+      ]
+    },
     {
       "videoId": "5PPy2fd-LmU",
       "title": "記号を捨てよ：数学的真実を「創発」する力　#吉見真一 #シンイチ数学 #定義存在学 #NotebookLM #数学 #数学哲学 #創発 #リーマン予想 #思考実験 #Shorts",
@@ -116,19 +131,6 @@
       "thumbnail": "https://i.ytimg.com/vi/Ip9NSvUOwcI/mqdefault.jpg",
       "matchedQueries": [
         "集合的予測符号化"
-      ]
-    },
-    {
-      "videoId": "pzN5yP4m8wQ",
-      "title": "対談バトル！ 感情はロボットに実装できるのか？【堀井隆斗 vs スズキ】",
-      "description": "ロボットは感情をもてるのか、進化生物学者がロボット工学者の堀井さんに対談バトルを挑みました！ 【チャプター】 00:00 ...",
-      "channelTitle": "TANICHU NEVER KNOWS (Tadahiro Taniguchi)",
-      "channelId": "UCqDrijAYiRnC_RwbanZk6Jg",
-      "publishedAt": "2026-04-17T09:01:23Z",
-      "thumbnail": "https://i.ytimg.com/vi/pzN5yP4m8wQ/mqdefault.jpg",
-      "matchedQueries": [
-        "集合的予測符号化",
-        "記号創発"
       ]
     }
   ]
