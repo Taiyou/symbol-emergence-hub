@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-22T11:29:02.746Z",
+  "fetchedAt": "2026-11-23T12:50:27.572Z",
   "queries": [
     "記号創発システム論",
     "Collective Predictive Coding",
@@ -8,6 +8,19 @@
     "CPC仮説"
   ],
   "items": [
+    {
+      "videoId": "Uzj8_L-mlJE",
+      "title": "「記号創発システム論来るべきAI共生社会の『意味』理解にむけて」(谷口忠大編・新曜社)",
+      "description": "",
+      "channelTitle": "Takahashi Kazuaki",
+      "channelId": "UCF-gz2I9ftLYx0k_JhStFLw",
+      "publishedAt": "2026-11-22T20:59:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/Uzj8_L-mlJE/mqdefault.jpg",
+      "matchedQueries": [
+        "記号創発システム論",
+        "記号創発"
+      ]
+    },
     {
       "videoId": "Iqsd0XWGCwo",
       "title": "#15 原子たちの会話から秩序が創発する ～物理学 meets CPC～（ゲスト：橋本幸士さん）｜記号創発クロストーク",
@@ -118,18 +131,6 @@
       "matchedQueries": [
         "集合的予測符号化",
         "記号創発"
-      ]
-    },
-    {
-      "videoId": "Ip9NSvUOwcI",
-      "title": "対談バトル！ 哲学は現代科学と協働できるのか？【平井靖史 vs スズキ】",
-      "description": "科学は現代科学と協働できるのか、進化生物学者が哲学者の平井さんに対談バトルを挑みました！ 【チャプター】 00:00 ...",
-      "channelTitle": "TANICHU NEVER KNOWS (Tadahiro Taniguchi)",
-      "channelId": "UCqDrijAYiRnC_RwbanZk6Jg",
-      "publishedAt": "2026-05-01T09:00:32Z",
-      "thumbnail": "https://i.ytimg.com/vi/Ip9NSvUOwcI/mqdefault.jpg",
-      "matchedQueries": [
-        "集合的予測符号化"
       ]
     }
   ]
