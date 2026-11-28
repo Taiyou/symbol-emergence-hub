@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-27T12:26:23.658Z",
+  "fetchedAt": "2026-11-28T11:50:43.986Z",
   "queries": [
     "記号創発システム論",
     "Collective Predictive Coding",
@@ -8,6 +8,18 @@
     "CPC仮説"
   ],
   "items": [
+    {
+      "videoId": "lUcdTcnT7f0",
+      "title": "意識ラジオ｜谷口忠大さん（AI・記号創発ロボティクス）× 土谷尚嗣 ― 『僕とアリスの夏物語』とクオリア：AIに意識は宿るか？",
+      "description": "岩波科学ライブラリーから出た二冊、谷口忠大さんの小説『僕とアリスの夏物語』と土谷の『クオリアはどこからくるのか？",
+      "channelTitle": "University of Consciousness, Qualia (UCQ)",
+      "channelId": "UCvRuQWqbKbHJFCC4xabOI4g",
+      "publishedAt": "2026-11-27T22:28:09Z",
+      "thumbnail": "https://i.ytimg.com/vi/lUcdTcnT7f0/mqdefault.jpg",
+      "matchedQueries": [
+        "記号創発"
+      ]
+    },
     {
       "videoId": "Uzj8_L-mlJE",
       "title": "「記号創発システム論来るべきAI共生社会の『意味』理解にむけて」(谷口忠大編・新曜社)",
@@ -118,19 +130,6 @@
       "thumbnail": "https://i.ytimg.com/vi/ypBD3nc2j78/mqdefault.jpg",
       "matchedQueries": [
         "集合的予測符号化"
-      ]
-    },
-    {
-      "videoId": "sVmNmRA1DHs",
-      "title": "対談バトル！ 著者襲来！ “予測誤差を食らう” ってなんなの？ 【行為する意識：吉田正俊 vs スズキ】",
-      "description": "「予測誤差を食らう」とは何なのか、『行為する意識』の著者のひとりである吉田さんに直撃インタビューました！ 0:00 スタート ...",
-      "channelTitle": "TANICHU NEVER KNOWS (Tadahiro Taniguchi)",
-      "channelId": "UCqDrijAYiRnC_RwbanZk6Jg",
-      "publishedAt": "2026-05-15T09:01:15Z",
-      "thumbnail": "https://i.ytimg.com/vi/sVmNmRA1DHs/mqdefault.jpg",
-      "matchedQueries": [
-        "集合的予測符号化",
-        "記号創発"
       ]
     }
   ]
